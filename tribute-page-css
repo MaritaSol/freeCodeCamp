@@ -1,0 +1,147 @@
+/* Esto es unarecontra megaporonga */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family:  "Inter", Segoe UI, sans-serif;
+    font-weight: 400;
+    background: linear-gradient(135deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4);
+    color: #2c3e50;
+    line-height: 1.6;
+    margin: 0;
+    padding: 1rem;
+    min-height: 100vh;
+}
+
+#main {
+    max-width: 85vw;
+    margin: 0 auto;
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    border: 8px solid #e74c3c;
+}
+
+#title {
+    font-family: 'Impact', 'Arial Black', 'Franklin Gothic Heavy', sans-serif;
+text-transform: uppercase;
+font-weight: 600;
+color: #45b7d1;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 3px 3px 0 #d5f4e6;
+}
+
+#main > p {
+    text-align: center;
+    font-style: italic;
+    color: #7f8c8d;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    background: #fff9c4;
+    padding: 1rem;
+    border-radius: 10px;
+    border-left: 5px solid #f39c12;
+}
+
+#img-div {
+    background: #e8f6f3;
+    padding: 1.5rem;
+    border-radius: 15px;
+    text-align: center;
+    margin: 2rem 0;
+    border: 3px solid #3498db;
+}
+
+#image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 5px solid #e74c3c;
+}
+
+#img-caption {
+    margin-top: 1rem;
+    font-style: italic;
+    color: #34495e;
+    background: #d5f4e6;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+}
+
+#tribute-info {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 15px;
+    margin: 2rem 0;
+    border-left: 5px solid #9b59b6;
+}
+
+#tribute-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#tribute-info li {
+    background: white;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#tribute-info strong {
+    color: #e74c3c;
+}
+
+h3 {
+    color: #9b59b6;
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 2rem 0 1rem 0;
+}
+
+#main > div:last-child ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    list-style-type: none;
+    padding: 0;
+}
+
+#main > div:last-child li {
+    background: #e1f5fe;
+    background: linear-gradient(45deg, #4ecdc4, #45b7d1, #96ceb4);
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid #9b59b6;
+}
+
+#tribute-link {
+    display: block;
+    text-align: center;
+    background: #e74c3c;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 50px;
+    margin: 2rem auto;
+    width: fit-content;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 0 #c0392b;
+}
+
+#tribute-link:hover {
+    background: #c0392b;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0 #a93226;
+}
