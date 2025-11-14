@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head> 
+  <body>
+
+    <nav id="navbar">
+        <header>CSS Flexbox Fundamentals</header>
+        <a class="nav-link" href="#Flexbox_Basics">Flexbox Basics</a>
+        <a class="nav-link" href="#The_Axes">The Axes</a>
+        <a class="nav-link" href="#Alignment:_Justify">Alignment: Justify</a>
+        <a class="nav-link" href="#Alignment:_Align">Alignment: Align</a>
+        <a class="nav-link" href="#Wrapping_and_Flow">Wrapping and Flow</a>
+    </nav>
+
+    <main id="main-doc">
+        <h1>CSS Flexbox: Fun and Flexible Layouts</h1>
+
+        <section class="main-section" id="Flexbox_Basics">
+            <header>Flexbox Basics</header>
+            <p>Flexbox, short for the Flexible Box Module, is a one-dimensional layout model designed to help you lay out content quickly and predictably in a single row or a single column. It makes it extremely easy to center items, a task that was notoriously difficult with older CSS methods.</p>
+            <p>To start using Flexbox, you simply set the display property on the parent container to flex. All direct children of this container become Flex Items and gain Flexbox behaviors.
+            <code>display: flex ;</code></p>
+          </section>
+
+        <section class="main-section" id="The_Axes">
+            <header>The Axes</header>
+            <p>The core concept of Flexbox revolves around two axes: the direction the items flow and the axis perpendicular to the Main Axis. By default, the main axis runs horizontally (left to right).</p>
+            <p>You control the direction of the Main Axis using the flex-direction property on the container. This is the first decision you make when building a flex layout, as it dictates how all alignment properties will behave.</p>
+            <ul>
+                <li>row: The default setting. Items flow horizontally.</li>
+                <li>column: Items stack vertically.</li>
+                <li>row-reverse/ column-reverse: Items flow in the opposite direction.</li>
+            </ul>
+            <code>
+.header-bar {
+    display: flex;
+       flex-direction: column; 
+}            </code>
+        </section>
+
+        <section class="main-section" id="Alignment:_Justify">
+            <header>Alignment: Justify</header>
+            <p>The justify-content property controls how space is distributed between and around flex items. This is how you space items out (or bunch them up) in the direction of your flow.</p>
+            <p>Some of the most commonly used values are:
+                <ul>
+                    <li>flex-start 
+                    <p> (default, items are packed at the start), </p></li>
+                    <li>flex-end
+                        <p> (perfect for horizontal centering!)</p></li>
+                    <li>space-between<p> (items distributed with equal space between them, but none at the ends)</p></li>
+            <code>
+.footer-links {
+    display: flex;
+    /* Centers items horizontally (along the main axis) */
+    justify-content: center; 
+}
+            </code>
+        </section>
+
+        <section class="main-section" id="Alignment:_Align">
+            <header>Alignment: Align</header>
+            <p>The align-items property controls how space is distributed between and around flex items along the Cross Axis. This is typically used to handle vertical centering when your main axis is horizontal (row).</p>
+            <p>The most popular setting here is <code>align-items: center;</code> This perfectly centers all flex items vertically within their container. Other useful values include flex-start, flex-end, and stretch (default, items try to fill the height of the container).</p>
+            <ul>
+                <li>Tip: Use justify-content: center; AND align-items: center; to center content both horizontally and vertically!</li>
+            </ul>
+            <code>
+.hero-box {
+    display: flex;
+    align-items: center; 
+}
+            </code>
+        </section>
+
+        <section class="main-section" id="Wrapping_and_Flow">
+            <header>Wrapping and Flow</header>
+            <p>By default, flex items will try to squeeze onto a single line, potentially shrinking past their specified widths to fit. The flex-wrap property changes this behavior, allowing items to wrap onto multiple lines when the container runs out of space.</p>
+            <p>Setting flex-wrap: wrap; is common when building image galleries or responsive card grids, ensuring items drop down neatly instead of shrinking indefinitely. </p>
+            <ul>
+            <li>Once wrapping is enabled, you can use align-content to control spacing between the lines of items.</li>
+           <li>The most common value is wrap, which flows items from top to bottom.</li>
+            </ul>
+            <code>
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap; 
+}
+            </code>
+        </section>
+
+    </main>
+</body>
+</html>
