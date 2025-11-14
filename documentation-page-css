@@ -1,0 +1,120 @@
+/* no se ve tan horrendo como dora etc*/
+
+body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+            scroll-behavior: smooth; 
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #1f2937;
+            margin-bottom: 2rem;
+            border-bottom: 4px solid #93c5fd;
+            padding-bottom: 0.5rem;
+        }
+ #navbar {
+            background-color: #ffffff;
+        }
+        
+        #navbar header {
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 1.0rem 1.5rem;
+            background-color: #3b82f6; /* Bright Blue */
+            color: white;
+            border-top-right-radius: 0.3rem;
+        }
+
+        a.nav-link {
+            display: block;
+            padding: 0.75rem 1.5rem;
+            border-bottom: 1px solid #e5e7eb; 
+            text-decoration: none;
+            color: #1f2937;
+            transition: background-color 0.5s ease-in-out;
+        }
+
+        a.nav-link:hover {
+            background-color: #dbeafe; 
+        }
+
+        #main-doc {
+            padding: 2rem; 
+        }
+
+        .main-section {
+            margin-bottom: 3rem;
+            background-color: #ffffff;
+            padding: 1.5rem;
+            border-radius: 0.75rem; 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); 
+        }
+
+        .main-section header {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #3b82f6; 
+            border-bottom: 2px solid #93c5fd;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .main-section p, .main-section li {
+            line-height: 1.7;
+            color: #4b5563;
+        }
+        
+        .main-section code {
+            display: block;
+            white-space: pre-wrap;
+            background-color: #2d2d2d;
+            color: #f8f8f2;
+            padding: 1.2rem;
+            margin: 1.5rem 0;
+            border-radius: 0.5rem;
+            font-family: 'SF Mono', 'Courier New', monospace;
+            overflow-x: auto;
+            font-size: 0.95rem;
+            border: 1px solid #4a4a4a;
+        }
+        
+       
+        @media (min-width: 768px) {
+            #navbar {
+                width: 300px;
+                height: 100%;
+                position: fixed; 
+                top: 0;
+                left: 0;
+                overflow-y: auto;
+                border-right: 1px solid #e5e7eb;
+                box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+            }
+            #main-doc {
+                margin-left: 300px; 
+                padding: 3rem 4rem;
+            }
+        }
+        @media (max-width: 767px) {
+            #navbar {
+                position: sticky;
+                top: 0;
+                z-index: 10;
+                border-bottom: 1px solid #e5e7eb;
+                overflow-x: auto; 
+                white-space: nowrap;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            }
+            #navbar header {
+                               display: none; 
+            }
+            #navbar a.nav-link {
+                display: inline-block; 
+                border-bottom: none;
+            }
+        }
