@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>freeCodeCamp Survey Form</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Qué te parece</h1>
+        <p id="description">Esto debería ser una encuesta de satisfacción.</p>
+    </header>
+
+    <main>
+        <form id="survey-form">
+            <section id="datos">
+            <label id="name-label" for="name">Nombre (obligatorio):</label>
+            <input id="name" type="text" name="name" required placeholder="Pepe">
+
+            <label id="email-label" for="email">Email (obligatorio):</label>
+            <input id="email" type="email" name="email" placeholder="mail@topito.com" required>
+
+            <label id="number-label" for="number">Teléfono:</label>
+                <input id="number" type="number" name="number" min="9" max="12" placeholder="555-555-555">
+            </section>
+
+            <section>
+                <label for="dropdown">¿Te gusta contestar encuestas?</label>
+                <select name="satisfaction" id="dropdown">
+                    <option value="no">No</option>
+                    <option value="tampoco">Tampoco</option>
+                </select>
+            </section>
+
+            <section>
+                <label>¿Te gusta contestar con radio buttons?</label>
+                <div>
+                <input id="yes-option" type="radio" name="hotel-stay" value="yes">
+                <label for="yes-option">Sip</label>
+                <input id="no-option" type="radio" name="hotel-stay" value="no">
+                <label for="no-option">Nop</label>
+                </div>
+            </section>
+
+            <section>
+                <label for="comments">¿Querés dejar un comentario?</label>
+                <textarea cols="30" rows="10" name="comments" id="comments" placeholder="Francamente, no se me ocurre nada."></textarea>
+            </section>
+
+            <section>
+    <p> ¿Cómo te enteraste de este sitio genial? </p>
+                <input type="checkbox" id="ads" name="ads" value="social-media">
+                <label for="ads">Redes Sociales</label>
+                <input type="checkbox" id="recommendation" name="recommendation" value="friend-recommendation">
+                <label for="recommendation">Me contó un pajarito</label>
+                <input type="checkbox" id="clarin" name="clarin" value="clarin">
+                <label for="clarin">Radio Clarín</label>
+            </section>
+
+            <button id="submit" type="submit">Submit Form</button>
+        </form>
+    </main>
+</body>
+</html>
